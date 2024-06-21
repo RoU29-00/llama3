@@ -7,7 +7,11 @@ set -e
 
 read -p "Enter the URL from email: " PRESIGNED_URL
 echo ""
-read -p "Enter the list of models to download without spaces (8B,8B-instruct,70B,70B-instruct), or press Enter for all: " MODEL_SIZE
+read -p "Enter the list of models to download without spaces (8B,8B-instruct,70B,70B-instruct), or press Enter for all: " 
+
+PRESIGNED_URL="https://download6.llamameta.net/*?Policy=eyJTdGF0ZW1lbnQiOlt7InVuaXF1ZV9oYXNoIjoibG1qbmVhbHR5NmhsazM0c2dxc3gxb2R4IiwiUmVzb3VyY2UiOiJodHRwczpcL1wvZG93bmxvYWQ2LmxsYW1hbWV0YS5 uZXRcLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTkwNTEyNjR9fX1dfQ__&署名=adwqIDKX92fwCX6ffcHjE9o6m%7EqoK6Mzhm3GICz8CaiU8DSdsnpA75yCQHMYGrA%7Em a1Wy9OT-i9twrapTix-g5aA77XBYeki-jzJpSpmxDR0cdpH7lWY-HNMx8QYouOzKSqZ56NROfLtx6OBx3eTXuESWCNzZLM4gLpz3WLpieo5ryvauOwoeh3jbQf0yM0VhF05qeRmUDm2dk2cBmUxUcRfppZnW576HJs-c7sehXL3L ZjIvK5h4c%7E9faVO24s3i109ROLOlYxPeV2206ZQUIVCdxAYcFWxjKSTqiFFKrHnM2wcRfbRy6q7cknwG0kqkjOxIogq22nwlolm6voomQ__&キーペアID=K15QRJLYKIFSLZ&ダウンロードリクエストID=3312228225739823"
+MODEL_SIZE="8B"
+
 TARGET_FOLDER="."             # where all files should end up
 mkdir -p ${TARGET_FOLDER}
 
